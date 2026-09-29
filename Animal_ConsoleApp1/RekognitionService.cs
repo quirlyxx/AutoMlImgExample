@@ -2,6 +2,7 @@
 using Amazon.Rekognition;
 using Amazon.Rekognition.Model;
 
+////
 namespace Animal_ConsoleApp1
 {
     internal class RekognitionService

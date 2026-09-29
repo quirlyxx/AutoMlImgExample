@@ -6,14 +6,14 @@ using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.ReplyMarkups;
 
 
-var rekognition = new RekognitionService("AKIAUFJLN4BIWRQNVUU7", "e7OXvrzcMqsRW6/DLQNaxf48Y4OAMzL7nWr9iPj/");
-var bot = new TelegramBotClient("8729906810:AAEenjAviZhaxgmftaXSCFzOebM1Q7VqX8E");
+var rekognition = new RekognitionService("AWS_ACCESS_KEY", "AWS_SECRET_KEY");
+var bot = new TelegramBotClient("TELEGRAM_BOT_TOKEN");
 var me = await bot.GetMe();
 
-const string BtnLabels = "🖼 Аналіз зображення";
-const string BtnText = "📝 Розпізнавання тексту";
-const string BtnModeration = "🛡 Модерація";
-const string BtnFaces = "👥 Порівняння облич";
+const string BtnLabels = "Аналіз зображення";
+const string BtnText = "Розпізнавання тексту";
+const string BtnModeration = "Модерація";
+const string BtnFaces = "Порівняння облич";
 
 var menu = new ReplyKeyboardMarkup(new[]
 {
